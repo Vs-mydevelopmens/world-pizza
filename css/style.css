@@ -902,7 +902,7 @@ body.ie ._ibg img {
   -webkit-transition: all 0.2s ease;
   -o-transition: all 0.2s ease;
   transition: all 0.2s ease;
-  display: block;
+  display: inline-block;
 }
 
 .menu__link:hover {

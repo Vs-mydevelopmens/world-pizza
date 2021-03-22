@@ -533,6 +533,10 @@ textarea.input {
           justify-content: flex-end;
 }
 
+._fixed {
+  background: #eac7a7 !important;
+}
+
 .row:after {
   display: block;
   content: "";
@@ -949,10 +953,10 @@ body.ie ._ibg img {
 
 .header {
   position: fixed;
-  width: 100%;
-  height: 80px;
   top: 0;
   left: 0;
+  width: 100%;
+  height: 80px;
   background: rgba(234, 199, 167, 0.17);
   z-index: 50;
 }
@@ -1220,7 +1224,7 @@ body.ie ._ibg img {
     top: 80px;
     right: 0;
     display: block;
-    background-color: rgba(234, 199, 167, 0.17);
+    background-color: #eac7a7;
     padding: 50px 25px;
     overflow-y: auto;
     height: auto;

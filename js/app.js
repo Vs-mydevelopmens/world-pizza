@@ -786,6 +786,16 @@ animate({
 	}
 })();
 
+// ==========================================
+let header = document.querySelector("header");
+window.addEventListener("scroll", function () {
+	let scrollPoss = window.scrollY;
+	if (scrollPoss > 0) {
+		header.classList.add("_fixed");
+	} else {
+		header.classList.remove("_fixed");
+	}
+});
 //let btn = document.querySelectorAll('button[type="submit"],input[type="submit"]');
 let forms = document.querySelectorAll('form');
 if (forms.length > 0) {

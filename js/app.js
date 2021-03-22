@@ -786,12 +786,6 @@ animate({
 	}
 })();
 
-// ==========================================
-// Выделяем активное меню
-$('a').click(function () {
-	$('.menu-active').removeClass('menu-active');
-	$(this).addClass('menu-active');
-});
 //let btn = document.querySelectorAll('button[type="submit"],input[type="submit"]');
 let forms = document.querySelectorAll('form');
 if (forms.length > 0) {

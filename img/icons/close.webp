@@ -1,1 +1,3 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18"><defs><path id="avzva" d="M691.485 160.07l-1.414 1.415-7.071-7.071-7.071 7.071-1.414-1.414 7.07-7.071-7.07-7.071 1.414-1.415 7.07 7.071 7.072-7.07 1.414 1.414-7.07 7.07z"/></defs><g><g transform="translate(-674 -144)"><use fill="#fff" xlink:href="#avzva"/></g></g></svg>
+<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M17.485 16.07L16.071 17.485L9 10.414L1.92902 17.485L0.515015 16.071L7.58502 9L0.515015 1.929L1.92902 0.514008L8.99902 7.58501L16.071 0.514999L17.485 1.929L10.415 8.99899L17.485 16.07Z" fill="black"/>
+</svg>

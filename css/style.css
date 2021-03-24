@@ -1198,8 +1198,7 @@ body.ie ._ibg img {
 }
 
 .menu {
-  padding-top: calc(30px + 20 * ((100vw - 320px) / 1600));
-  padding-bottom: calc(30px + 20 * ((100vw - 320px) / 1600));
+  padding: 50px 0;
 }
 
 .menu__title {

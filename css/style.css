@@ -134,7 +134,7 @@ body._lock {
   border-radius: 59px;
   font-style: normal;
   font-weight: 700;
-  font-size: 18px;
+  font-size: calc(14px + 4 * ((100vw - 320px) / 1600));
   line-height: 48px;
   height: 48px;
   color: #ffffff;
@@ -533,8 +533,16 @@ textarea.input {
           justify-content: flex-end;
 }
 
-._fixed {
+._scroll {
   background: #eac7a7 !important;
+}
+
+.title__section {
+  font-style: normal;
+  font-weight: 900;
+  font-size: calc(20px + 16 * ((100vw - 320px) / 1600));
+  line-height: calc(28px + 14 * ((100vw - 320px) / 1600));
+  color: rgba(98, 60, 25, 0.96);
 }
 
 .row:after {
@@ -1189,6 +1197,192 @@ body.ie ._ibg img {
   display: block;
 }
 
+.menu {
+  padding-top: calc(30px + 20 * ((100vw - 320px) / 1600));
+  padding-bottom: calc(30px + 20 * ((100vw - 320px) / 1600));
+}
+
+.menu__title {
+  margin-right: calc(50px + 50 * ((100vw - 320px) / 1600));
+}
+
+.tabs-block__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0px 0px 50px 0px;
+}
+
+.tabs-block__nav-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.tabs-block__item {
+  margin: 0px 11px 0px 11px;
+  padding: 0 12px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 23px;
+  height: 23px;
+  color: rgba(98, 60, 25, 0.96);
+  cursor: pointer;
+  -webkit-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+.tabs-block__item._active {
+  background: rgba(188, 118, 54, 0.96);
+  border-radius: 100px;
+  color: #fff;
+  -webkit-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+.tabs-block__item:hover {
+  background: rgba(188, 118, 54, 0.96);
+  border-radius: 100px;
+  color: #fff;
+  -webkit-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+.tabs-block__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: -15px -15px;
+}
+
+.tabs-block__content-column {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 33.333%;
+          flex: 0 1 33.333%;
+  padding: 15px 15px;
+}
+
+.tabs-block__content-product {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.tabs-product {
+  background-color: #fff0e1;
+  border-radius: 27px;
+  padding: 32px 46px 22px 46px;
+}
+
+.tabs-product__btn {
+  margin: 15px auto 0 auto;
+}
+
+.tabs-product__image {
+  margin: 0 auto 10px auto;
+  width: 226px;
+  height: 226px;
+}
+
+.tabs-product__image img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.tabs-product__title {
+  font-style: normal;
+  font-weight: 700;
+  line-height: 21px;
+  font-size: calc(16px + 2 * ((100vw - 320px) / 1600));
+  color: rgba(98, 60, 25, 0.96);
+  margin: 0px 0px 16px 0px;
+}
+
+.tabs-product__list {
+  margin: 0px 0px 16px 0px;
+  width: 236px;
+}
+
+.tabs-product__list-item {
+  font-style: normal;
+  font-weight: 400;
+  font-size: calc(14px + 1 * ((100vw - 320px) / 1600));
+  line-height: 18px;
+  color: rgba(98, 60, 25, 0.96);
+}
+
+.tabs-product__size {
+  background: rgba(255, 222, 192, 0.96);
+  -webkit-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.25);
+  border-radius: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 240px;
+  margin: 0 auto 11px auto;
+}
+
+.tabs-product__size-item {
+  font-style: normal;
+  font-weight: 400;
+  font-size: calc(14px + 1 * ((100vw - 320px) / 1600));
+  line-height: 30px;
+  height: 30px;
+  color: rgba(98, 60, 25, 0.96);
+  padding: 0 23px;
+  cursor: pointer;
+}
+
+.tabs-product__size-item._active {
+  background: rgba(188, 118, 54, 0.96);
+  border-radius: 100px;
+  color: #fff;
+}
+
+.tabs-product__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.tabs-product__info-price {
+  font-style: normal;
+  font-weight: 700;
+  font-size: calc(15px + 3 * ((100vw - 320px) / 1600));
+  line-height: 21px;
+  color: rgba(98, 60, 25, 0.96);
+}
+
 @media (min-width: 991.98px) {
   .quantity__button:hover::before,
   .quantity__button:hover::after {
@@ -1314,6 +1508,30 @@ body.ie ._ibg img {
             transform: rotate(45deg);
     bottom: calc(50% - 1px);
   }
+
+  .menu__title {
+    margin: 0px 0px 30px 0px;
+  }
+
+  .tabs-block__nav {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+
+  .tabs-block__item:first-child {
+    margin: 0px 11px 0px 0px;
+  }
+
+  .tabs-block__content-column {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 50%;
+            flex: 0 1 50%;
+  }
 }
 
 @media (max-width: 991.98px) {
@@ -1364,6 +1582,38 @@ body.ie ._ibg img {
   }
 }
 
+@media (max-width: 740px) {
+  .tabs-block__nav-list {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  .tabs-block__item {
+    margin: 21px 11px 0px 11px;
+  }
+
+  .tabs-block__item:first-child {
+    margin: 21px 11px 0px 11px;
+  }
+}
+
+@media (max-width: 715px) {
+  .tabs-block__content {
+    margin: 0px 0px 0px 0px;
+  }
+
+  .tabs-block__content-column {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 75%;
+            flex: 0 0 75%;
+    padding: 0px 0px 0px 0px;
+    margin: 0px auto 30px auto;
+  }
+}
+
 @media (max-width: 570px) {
   .header-right {
     -webkit-box-pack: end;
@@ -1396,5 +1646,19 @@ body.ie ._ibg img {
   .popup__image {
     width: 180px;
     margin: 30px 0px 0px 0px;
+  }
+}
+
+@media (max-width: 500px) {
+  .tabs-block__content-column {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+  }
+}
+
+@media (max-width: 375px) {
+  .tabs-product {
+    padding: 30px;
   }
 }

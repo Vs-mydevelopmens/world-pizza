@@ -1810,7 +1810,7 @@ body.ie ._ibg img {
     -webkit-transform: translateX(0);
         -ms-transform: translateX(0);
             transform: translateX(0);
-    width: 40%;
+    width: 60%;
     overflow: auto;
     height: 100vh;
   }

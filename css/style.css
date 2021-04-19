@@ -1371,6 +1371,7 @@ body.ie ._ibg img {
   margin: 0 auto 10px auto;
   width: 226px;
   height: 226px;
+  background: url(../img/icons/loading.gif) center/50px no-repeat;
 }
 
 .tabs-product__image img {
@@ -1432,6 +1433,12 @@ body.ie ._ibg img {
   color: rgba(98, 60, 25, 0.96);
   padding: 0 23px;
   cursor: pointer;
+}
+
+.tabs-product__size-item._active {
+  background: rgba(188, 118, 54, 0.96);
+  border-radius: 100px;
+  color: #fff;
 }
 
 .tabs-product__info {
@@ -1735,6 +1742,7 @@ body.ie ._ibg img {
 
 .contacts-content__map {
   height: 100%;
+  background: url(../img/icons/loading.gif) center/50px no-repeat;
 }
 
 .contacts-item {
@@ -1918,6 +1926,27 @@ body.ie ._ibg img {
     -webkit-box-flex: 0;
         -ms-flex: 0 1 50%;
             flex: 0 1 50%;
+  }
+}
+
+@media (max-width: 1183px) and (max-width: 570px) {
+  .menu__body .header-right__phone__phone {
+    padding: 0px 0px 50px 0px;
+    margin: 40px 0px 0px 0px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+  .menu__body .header-right__phone__phone-number {
+    font-size: 20px;
+    line-height: 32px;
+    margin: 0px 0px 15px 0px;
+  }
+
+  .menu__body .header-right__phone__phone-feedback a {
+    font-size: 16px;
+    line-height: 24px;
   }
 }
 
@@ -2216,25 +2245,6 @@ body.ie ._ibg img {
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end;
-  }
-
-  .header-right__phone {
-    padding: 0px 0px 50px 0px;
-    margin: 40px 0px 0px 0px;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-
-  .header-right__phone-number {
-    font-size: 20px;
-    line-height: 32px;
-    margin: 0px 0px 15px 0px;
-  }
-
-  .header-right__phone-feedback a {
-    font-size: 16px;
-    line-height: 24px;
   }
 
   .header-right__cart {
